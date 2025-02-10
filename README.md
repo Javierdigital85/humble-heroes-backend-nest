@@ -21,28 +21,29 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/Javierdigital85/humble-heroes-backend-nest
-   cd humble-heroes-backend-nest
-
-   ```
+```bash
+git clone https://github.com/Javierdigital85/humble-heroes-backend-nest
+cd humble-heroes-backend-nest
+```
 
 2. Create a .env file
 
 3. File with your environment variables, for example:
 
-   POSTGRES_USER=javier
-   POSTGRES_PASSWORD=topsecret
-   POSTGRES_DB=postgres
-   DB_HOST=localhost
-   DB_PORT=5432
-   DB_USERNAME=javi
-   DB_PASSWORD=secret
-   DB_NAME=postgres
-   DIALECT=postgres
-   PORT=8000
-   DATABASE_URL="postgresql://javier:topsecret@localhost:5432/postgres?schema=public"
-   FRONTEND_URL=http://localhost:5173
+```bash
+POSTGRES_USER=javier
+POSTGRES_PASSWORD=topsecret
+POSTGRES_DB=postgres
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=javi
+DB_PASSWORD=secret
+DB_NAME=postgres
+DIALECT=postgres
+PORT=8000
+DATABASE_URL="postgresql://javier:topsecret@localhost:5432/postgres?schema=public"
+FRONTEND_URL=http://localhost:5173
+```
 
 4. Build and start the containers:
    docker compose up -d
