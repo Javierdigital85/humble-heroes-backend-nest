@@ -6,6 +6,7 @@ import { PrismaClient } from '@prisma/client';
 @Injectable()
 export class HeroesService extends PrismaClient {
   async create(createHeroDto: CreateHeroDto) {
+    console.log(createHeroDto);
     const heroFound = await this.hero.findFirst({
       where: { name: createHeroDto.name },
     });

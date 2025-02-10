@@ -1,3 +1,4 @@
+import { Transform } from 'class-transformer';
 import { IsNotEmpty, IsNumber, IsString, Max, Min } from 'class-validator';
 
 export class CreateHeroDto {
@@ -12,5 +13,6 @@ export class CreateHeroDto {
   @IsNumber()
   @Min(1, { message: 'Humility score must be between 1 and 10' })
   @Max(10, { message: 'Humility score must be no greater than 10' })
+  @Transform(({ value }) => Number(value))
   humilityScore: number;
 }
