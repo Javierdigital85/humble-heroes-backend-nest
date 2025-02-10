@@ -4,7 +4,7 @@ import * as joi from 'joi';
 interface EnvVars {
   PORT: number;
   DATABASE_URL?: string;
-  URL_FRONTEND?: string;
+  FRONTEND_URL?: string;
 }
 
 //Validador de esquema
@@ -12,7 +12,7 @@ const envsSchema = joi
   .object({
     PORT: joi.number().required(),
     DATABASE_URL: joi.string().optional(),
-    URL_FRONTEND: joi.string().optional(),
+    FRONTEND_URL: joi.string().optional(),
   })
   .unknown(true);
 
@@ -29,5 +29,5 @@ const envVars: EnvVars = value as EnvVars;
 export const envs = {
   port: envVars.PORT,
   databaseUrl: envVars.DATABASE_URL,
-  url_frontend: envVars.URL_FRONTEND,
+  url_frontend: envVars.FRONTEND_URL,
 };
