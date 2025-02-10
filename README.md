@@ -6,7 +6,7 @@ The **Humble Superhero API** is a simple Node.js-based API that allows users to 
 
 ---
 
-## 📦 How to Run the Project
+## How to Run the Project
 
 ### 1️⃣ Prerequisites
 
@@ -22,30 +22,29 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-  git clone https://github.com/Javierdigital85/humble-heroes-backend-nest
+   git clone https://github.com/Javierdigital85/humble-heroes-backend-nest
    cd humble-heroes-backend-nest
 
    ```
 
 2. Create a .env file based on the .env.example template:
 
-3.  File with your environment variables, for example:
+3. File with your environment variables, for example:
 
-    POSTGRES_USER=javier
-    POSTGRES_PASSWORD=topsecret
-    POSTGRES_DB=postgres
-    DB_HOST=localhost
-    DB_PORT=5432
-    DB_USERNAME=javi
-    DB_PASSWORD=secret
-    DB_NAME=postgres
-    DIALECT=postgres
-    PORT=8000
-    URL_FRONTEND=http://localhost:5173
+   POSTGRES_USER=javier
+   POSTGRES_PASSWORD=topsecret
+   POSTGRES_DB=postgres
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_USERNAME=javi
+   DB_PASSWORD=secret
+   DB_NAME=postgres
+   DIALECT=postgres
+   PORT=8000
+   URL_FRONTEND=http://localhost:5173
 
-4.  Build and start the containers:
-    docker compose up -d
-
+4. Build and start the containers:
+   docker compose up -d
 
 5. Install dependencies
    npm install
@@ -54,10 +53,10 @@ Make sure you have the following installed:
    npm run start:dev
 
 7. Once the containers are up and the app running, the server should be available at:
-   http://localhost:8000   
+   http://localhost:8000
 
 . Running Tests
-   npm test
+npm test
 
 ## Collaboration Plan
 
@@ -96,7 +95,7 @@ If I had more time, I would:
 2. Focus on increasing test coverage with more unit and integration tests to ensure reliability.
 3. Add More Endpoints
 4. Expand the API by adding additional endpoints to support more features and improve functionality.
-Implement Swagger Documentation
+   Implement Swagger Documentation
 5. Create comprehensive Swagger documentation to make the API easier to understand and use for other developers.
-Set Up a Dedicated Testing Database
+   Set Up a Dedicated Testing Database
 6. Configure a separate testing database to ensure isolated and consistent test environments.
