@@ -27,7 +27,7 @@ Make sure you have the following installed:
 
    ```
 
-2. Create a .env file based on the .env.example template:
+2. Create a .env file 
 
 3. File with your environment variables, for example:
 
