@@ -27,7 +27,7 @@ Make sure you have the following installed:
 
    ```
 
-2. Create a .env file 
+2. Create a .env file
 
 3. File with your environment variables, for example:
 
@@ -41,7 +41,8 @@ Make sure you have the following installed:
    DB_NAME=postgres
    DIALECT=postgres
    PORT=8000
-   URL_FRONTEND=http://localhost:5173
+   DATABASE_URL="postgresql://javier:topsecret@localhost:5432/postgres?schema=public"
+   FRONTEND_URL=http://localhost:5173
 
 4. Build and start the containers:
    docker compose up -d

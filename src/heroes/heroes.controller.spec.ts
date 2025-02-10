@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { HeroesController } from './heroes.controller';
 import { HeroesService } from './heroes.service';
-import { PrismaService } from '../../prisma/prisma.service'; // Asegúrate de importar PrismaService
+import { PrismaService } from '../../prisma/prisma.service';
 
 describe('HeroesController', () => {
   let heroesController: HeroesController;
@@ -11,14 +11,13 @@ describe('HeroesController', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [HeroesController],
-      providers: [HeroesService, PrismaService], // Asegúrate de incluir PrismaService en los providers
+      providers: [HeroesService, PrismaService],
     }).compile();
 
     heroesController = module.get<HeroesController>(HeroesController);
     heroesService = module.get<HeroesService>(HeroesService);
     prismaService = module.get<PrismaService>(PrismaService);
 
-    // Limpiar la base de datos antes de cada prueba
     await prismaService.cleanDatabase();
   });
 
@@ -54,7 +53,6 @@ describe('HeroesController', () => {
 
     const heroes = await heroesController.findAll();
 
-    // Verifica que el método `findAll` haya sido llamado
     expect(findAllSpy).toHaveBeenCalled();
 
     expect(heroes).toEqual(result);

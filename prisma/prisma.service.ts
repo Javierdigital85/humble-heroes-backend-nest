@@ -7,15 +7,14 @@ export class PrismaService
   implements OnModuleInit, OnModuleDestroy
 {
   async onModuleInit() {
-    await this.$connect(); // Conecta a la base de datos al iniciar el módulo
+    await this.$connect();
   }
 
   async onModuleDestroy() {
-    await this.$disconnect(); // Desconecta al destruir el módulo
+    await this.$disconnect();
   }
 
-  // Método para limpiar la base de datos en pruebas
   async cleanDatabase() {
-    await this.hero.deleteMany(); // Elimina todos los registros de la tabla 'hero'
+    await this.hero.deleteMany();
   }
 }
