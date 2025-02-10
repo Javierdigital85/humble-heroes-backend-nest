@@ -3,16 +3,16 @@ import * as joi from 'joi';
 
 interface EnvVars {
   PORT: number;
-  DATABASE_URL: string;
-  URL_FRONTEND: string;
+  DATABASE_URL?: string;
+  URL_FRONTEND?: string;
 }
 
 //Validador de esquema
 const envsSchema = joi
   .object({
     PORT: joi.number().required(),
-    DATABASE_URL: joi.string().required(),
-    URL_FRONTEND: joi.string().required(),
+    DATABASE_URL: joi.string().optional(),
+    URL_FRONTEND: joi.string().optional(),
   })
   .unknown(true);
 
