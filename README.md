@@ -22,8 +22,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/humble-superhero-api.git
-   cd humble-superhero-api
+  git clone https://github.com/Javierdigital85/humble-heroes-backend-nest
+   cd humble-heroes-backend-nest
 
    ```
 
