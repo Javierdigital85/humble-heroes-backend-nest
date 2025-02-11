@@ -14,7 +14,7 @@ datasource db {
 }
 
 model Hero {
-  id Int    @id @default(autoincrement()) // El ID se genera automáticamente
+  id Int    @id @default(autoincrement()) 
   name String @unique
   superpower String
   humilityScore Int
