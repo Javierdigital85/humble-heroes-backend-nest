@@ -8,7 +8,7 @@ The **Humble Superhero API** is a simple Node.js-based API that allows users to 
 
 ## How to Run the Project
 
-### 1️⃣ Prerequisites
+### 1 Prerequisites
 
 Make sure you have the following installed:
 
@@ -17,7 +17,7 @@ Make sure you have the following installed:
 - **Docker** (v20+ recommended)
 - **Docker Compose** (for managing multi-container Docker applications)
 
-### 2️⃣ Installation
+### 2 Installation
 
 1. Clone the repository:
 
@@ -51,53 +51,61 @@ FRONTEND_URL=http://localhost:5173
 5. Install dependencies
    npm install
 
-6. Running the Server
+6. Run the Server
    npm run start:dev
 
 7. Once the containers are up and the app running, the server should be available at:
    http://localhost:8000
 
-. Running Tests
+. Run Tests
 npm test
 
-## Collaboration Plan
+## Technical Skills: Code Quality, Simplicity, and Functionality
+
+The API is built using Node.js and NestJS, following clean code principles and ensuring simplicity and modularity.
+Docker is used to manage the PostgreSQL database and simplify the development environment.
+Prisma is used for database operations.
+Testing: Jest and Supertest are used for integration tests.
+Endpoints are structured for easy maintenance and expansion, with a focus on scalability and performance.
+
+## Team Player Attitude
 
 To improve or expand this task, I would collaborate with a teammate in the following ways:
 
-1. **Task Breakdown and Role Assignment**:
+1.Task Breakdown and Role Assignment
+Divide the task into smaller subtasks based on each person's expertise.
+One teammate could focus on developing new features while the other improves tests and documentation.
 
-   - First, we would break down the task into smaller, manageable subtasks and assign roles based on each teammate's strengths and expertise.
-   - For example, one person could focus on implementing new features or logic, while the other works on improving tests, documentation, or addressing edge cases.
+2.Frequent Communication
+Regular communication through video calls to share progress, ask for feedback, and unblock issues.
+We would set up short daily check-ins.
 
-2. **Frequent Communication**:
+3.Code Reviews and Pair Programming
+Frequent code reviews to ensure high code quality and identify issues early.
+Pair programming sessions for complex features or debugging.
 
-   - Regular communication would be key to ensure we're aligned and that tasks are being completed according to the requirements.
-   - We would set up quick check-ins (daily or bi-daily) to discuss progress, blockers, and share feedback on each other's work.
-   - Communication could be done via Slack, and for complex discussions, we would hold video calls.
+4.Testing and Debugging Together
+One teammate could implement a feature while the other writes tests to ensure full coverage and reliability.
+Collaborative debugging to handle edge cases and deployment preparation.
 
-3. **Code Reviews and Pair Programming**:
+5.Iterative Improvement
+Review the code together and identify opportunities for refactoring or optimization.
 
-   - Code reviews would be conducted frequently to maintain code quality, identify potential issues, and learn from each other's approaches.
-   - Pair programming could also be used for certain features to boost productivity and knowledge sharing.
-
-4. **Testing and Debugging Together**:
-
-   - While one teammate works on implementing a feature, the other could focus on writing tests, ensuring that the code is well-covered by unit and integration tests.
-   - We would also test edge cases and handle potential failures in a collaborative manner to prevent issues during deployment.
-
-5. **Iterative Improvement**:
-   - After completing the initial task, we would review the code together to identify areas for improvement, such as performance optimization or refactoring.
-   - We would also brainstorm on how to expand the task, adding new features or functionality to better serve the users.
-
-By splitting responsibilities, communicating effectively, and engaging in code reviews and collaborative debugging, we would ensure both quality and efficiency in improving or expanding the task.
+## Eagerness to Learn: If I Had More Time
 
 If I had more time, I would:
 
-1. Write More Tests
-2. Focus on increasing test coverage with more unit and integration tests to ensure reliability.
-3. Add More Endpoints
-4. Expand the API by adding additional endpoints to support more features and improve functionality.
-   Implement Swagger Documentation
-5. Create comprehensive Swagger documentation to make the API easier to understand and use for other developers.
-   Set Up a Dedicated Testing Database
-6. Configure a separate testing database to ensure isolated and consistent test environments.
+Write More Tests
+Expand the API by adding endpoints for superhero updates, deletions, and searching.
+Implement Swagger Documentation
+Create comprehensive Swagger documentation to improve the developer experience and API discoverability.
+Use a separate database for testing to ensure isolated and consistent environments during development.
+Implement secure authentication and authorization with role-based access to protect endpoints.
+
+## Humility and Communication
+
+Collaboration and communication are key to a successful project. When working in a team, I would:
+Keep an open line of communication and be receptive to feedback.
+Write clear, concise comments and documentation to help others understand the code.
+Share knowledge and learn from teammates to improve my skills.
+Acknowledge areas for improvement and proactively seek guidance when needed.
